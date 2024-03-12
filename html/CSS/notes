@@ -1,0 +1,18 @@
+Selectors: 
+UniversalSelector *{}
+Class Selector .myClass{}
+Element Selector h1{}
+Id Selector #myId{}
+
+IMPORTANT LINKS :
+
+mdn web docs
+color picker
+loremipsum(by intellisense also can be possible)
+unsplash.com
+color palate - for color combination
+font Awesome.
+cdnjs.com/libraries/font-awesome.
+neumorphism ui css shadow
+Glassmorphism
+Autoprefixer

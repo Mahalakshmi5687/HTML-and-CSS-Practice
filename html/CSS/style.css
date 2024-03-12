@@ -1,0 +1,23 @@
+h2{
+    color: rgb(177, 226, 43);
+}
+body{
+    background-color: rgb(200, 39, 197);
+}
+#box{
+    background-color: rgb(137, 137, 182);
+    color:white;
+    height: 100px;
+    width: 500px;
+}
+button{
+    color:rgb(184, 30, 158);
+}
+.boxes{
+    width:100px;
+    height: 100px;
+    background-color: white;
+    border-width: 100px;
+
+    
+}

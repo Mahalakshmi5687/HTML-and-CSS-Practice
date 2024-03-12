@@ -1,0 +1,29 @@
+#rectangle{
+    background-color: black;
+    width: 100px;
+    height: 300px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+#redcircle{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    
+}
+#yellowcircle{
+    background-color:yellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    
+}
+#greencircle{
+    background-color: rgb(27, 174, 20);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    
+}
