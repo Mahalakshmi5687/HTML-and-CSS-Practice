@@ -1,0 +1,50 @@
+In Gitbash:
+
+-> ssh-keygen -t ed25519 -C "mahalakshmi180901@gmail.com" -f ~/.ssh/id_pra
+-> paraprash empty
+->paraphrase again empty
+
+The above three steps will creates the ssh key for repository for a particular account
+
+check the ssh is created by the coomand below
+->ls ~/.ssh
+
+if we directly try to add ssh key it will show this
+->Could not open a connection to your authentication agent.
+
+and to add the ssh key the command is as follows
+-> ssh-add ~/.ssh/id_pra
+
+to overcome this error Could not open a connection to your authentication agent.
+-> eval `ssh-agent -s` 
+the above command should be executed before adding ssh key.
+and it will give some thing like this 
+Agent pid 1703
+
+now we can proceed with adding ssh key by 
+-> ssh-add ~/.ssh/id_pra
+it will give some thing like this Identity added: /c/Users/Mahalakshmi.M/.ssh/id_pra (mahalakshmi180901@gmail.com)
+
+
+we need to get ssh key to add ssh key to repository. To get ssh key, the command is as follows
+-> cat ~/.ssh/id_pra
+this command will give some thing like this
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAWeWwDYlgpYQwyTk441qR+M4qLSpFFhiVRkVlXJ1BCKAAAAKC1kcJXtZHC
+VwAAAAtzc2gtZWQyNTUxOQAAACAWeWwDYlgpYQwyTk441qR+M4qLSpFFhiVRkVlXJ1BCKA
+AAAEBUGIApVxR4SRpQf3whg9g0f7fI7spXtBMLpdZy9Uc2yhZ5bANiWClhDDJOTjjWpH4z
+iotKkUWGJVGRWVcnUEIoAAAAG21haGFsYWtzaG1pMTgwOTAxQGdtYWlsLmNvbQEC
+-----END OPENSSH PRIVATE KEY-----
+Note: not exactly the same private key it will be different for you and different for each repository as well.
+
+
+and now to make this ssh key small we use .pub file and command goes as follows
+->cat ~/.ssh/id_pra.pub
+and this will give some thing like this
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBZ5bANiWClhDDJOTjjWpH4ziotKkUWGJVGRWVcnUEIo mahalakshmi180901@gmail.com
+Note: not exactly the same private key it will be different for you and different for each repository as well.
+
+
+now we need to take this ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBZ5bANiWClhDDJOTjjWpH4ziotKkUWGJVGRWVcnUEIo mahalakshmi180901@gmail.com
+ssh key and add to your repository of your account and use the ssh key to clone the repo.
