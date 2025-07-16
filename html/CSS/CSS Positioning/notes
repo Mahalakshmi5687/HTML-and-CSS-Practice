@@ -1,0 +1,22 @@
+CSS Position Property:
+*CSS Static Position
+*CSS Fixed Position
+*CSS Relative Position
+*CSS Absolute Position
+CSS Position Property:
+-The CSS Position property is used to determine how an element should be positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+
+*There are major four types of position property.
+
+*Static Position:
+This is default position for HTML elements.
+The position of the HTML elements is static by default. The position is set according to the normal flow of the page. It is not affected by the top, bottom, left, and right properties.
+
+*Fixed Position:
+The fixed positioning propery positions the element relative to the screen's viewport and stays fixed on the screen when scrolling.
+
+*Relative Position:
+The relative positioning position the element relative to where its normal position would have been.
+
+*Absolute Position:
+The absolute value position the element absolutely relative to its container. With absolute positioning, you can place an element anywhere on a page.

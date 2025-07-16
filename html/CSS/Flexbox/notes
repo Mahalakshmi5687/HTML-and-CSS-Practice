@@ -1,0 +1,22 @@
+* CSS Flexbox Basics
+* Flexbox model concept
+* Hands-on demo
+CSS Flexbox Basics:
+-CSS flexbox layout allows you to easily format HMTL. You can create flexible responsive structure without using float or positioning.
+-You can easily create layouts for complex application and web pages 
+using flexbox.
+-The ability to alter item width and height to best fit in its containers available free space.
+-Flexbox is direction-agnostic.
+-Built-for-small scale layouts while the upcoming "Grid" specification is for more large scale.
+Flexbox Model Concept:
+display:flex | inline-flex;
+flex-direction:row|column;
+flex-wrap: wrap|nowrap|wrapreverse 
+flex-basis:<length>
+justify-content:flex-start|flex-end|center 
+align-self:flex-start|flex-end|center 
+align-content:flex-start|flex-end|center 
+flex-grow:<number>;
+flex-shrink:<number>;
+flex:<integer>;
+order: <integer>; 
